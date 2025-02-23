@@ -132,20 +132,19 @@
       color: #555;
     }
     .btn {
-  background: linear-gradient(135deg, #009dff, #006edc);
-  color: white;
-  padding: 12px 30px;
-  font-size: 1.1em;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  margin: 20px auto 0;  /* centers the button horizontally */
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: block;       /* makes the button a block-level element */
-}
-
+      background: linear-gradient(135deg, #009dff, #006edc);
+      color: white;
+      padding: 12px 30px;
+      font-size: 1.1em;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 8px;
+      margin: 20px auto 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: block;
+    }
     .btn:hover {
       background: linear-gradient(135deg, #007adf, #005ab5);
       transform: scale(1.05);
@@ -390,10 +389,9 @@
     }
 
     #loginForm h2,
-#registerForm h2 {
-  text-align: center;
-}
-
+    #registerForm h2 {
+      text-align: center;
+    }
   </style>
   
   <!-- Firebase SDKs (Compat Versions) -->
@@ -635,12 +633,6 @@
     document.querySelector(".hamburger").addEventListener("click", function () {
       document.querySelector(".nav-links").classList.toggle("active");
     });
-    if (/android/i.test(navigator.userAgent)) {
-      const getStartedBtn = document.querySelector(".nav-right .get-started");
-      if (getStartedBtn) {
-        getStartedBtn.remove();
-      }
-    }
 
     // Modal Popup functionality for Login/Registration form
     document.addEventListener("DOMContentLoaded", function() {
